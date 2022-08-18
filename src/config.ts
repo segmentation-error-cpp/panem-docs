@@ -47,5 +47,6 @@ export const SIDEBAR = {
 	ru: [
 		{ text: '', header: true },
 		{ text: 'О API', link: 'ru/introduction' },
+		{ text: 'Примеры', link: 'ru/usages' }
 	],
 };
