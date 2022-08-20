@@ -43,8 +43,7 @@ layout: ../../layouts/MainLayout.astro
             "photo": "https://subdomain.domain.com/api/v1/files/nameofperson/photo.jpg",
             "group": "AA-00-0",
             "course": 4,
-            "fac": "FAI",
-            "": ""
+            "fac": "FAI"
         },
         "head": {
             "Content-Type": "application/json",
@@ -74,5 +73,20 @@ layout: ../../layouts/MainLayout.astro
             "X-Content-Type-Options": "nosniff",
             "Content-Security-Policy": "default-src 'self' *.domain.com"
         }
+    }
+    ```
+* **PATCH** `subdomain.domain.com/api/v1/user/{id}`
+* ```json
+    {
+        "name": "name-of-object",
+        "content": "content"
+    }
+    ```
+
+* **PATCH** `subdomain.domain.com/api/v1/user/{id}/meta`
+* ```json
+    {
+        "name": "name-of-object",
+        "content": "content"
     }
     ```
